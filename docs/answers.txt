@@ -1,0 +1,48 @@
+1. Paste the console output you saved at the end of step 3.C
+
+PS C:\Users\Dalee\assignment3-GitandOPPWarmUp> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 449 bytes | 449.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dalee2001/assignment3-GitandOPPWarmUp.git
+   7262be8..cfad760  master -> master
+
+2. How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information.
+    - There have been 9 commits.
+    - Command: git rev-list --all --count
+
+
+3. When was the README.md  file modified last? Write the git command you used to get this information
+    - The last time the READ.md file was modified last was Thu. Oct. 16 14:00:50 2025 -0500
+    - Command: git log -1 --format=%cd -- README.md
+
+4. Mention two reasons why branches are used in a Git repository
+    - They let developers work on new features or fixes without affecting the main code.
+    - They make it easy to merge and test changes separately before adding them to the main branch.
+
+5. What is the difference between git log and git status?
+    - git log shows the commit history (who made changes and when).
+    - git status shows the current state of your working directory (what files are modified, staged, or committed).
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files?
+    - git log --oneline --follow -- Vehicle.h
+
+7. What command would you use to see the commits whose commit message contains the word “file”?
+    - git log --oneline --grep="file"
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation?
+    - Inheritance: When one class gets features or methods from another class.
+    - Polymorphism: The ability for different classes to use the same method name but behave differently.
+    - Encapsulation: Hiding internal details of a class and only exposing necessary parts through public methods.
+
+9. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+    - Dictator and Lieutenants: One main person (the dictator) controls the final repository, while lieutenants manage sections and send updates upward.
+    - Integration Manager: One central person manages merges and integrations, but there’s no strict hierarchy like in the dictator model.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow?
+    - It scales better because work is divided. Lieutenants can review and combine changes from smaller groups before sending them to the main repository, reducing chaos and merge conflicts.
+
