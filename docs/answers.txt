@@ -1,3 +1,6 @@
+Date completed Git Lab Tutorials: October 16, 2025
+Date GitHub account created: Around 2020 (estimate)
+
 1. Paste the console output you saved at the end of step 3.C
 
 PS C:\Users\Dalee\assignment3-GitandOPPWarmUp> git push
